@@ -52,8 +52,12 @@ def lab2_task6(lst):
         print(f"{i}. {lst[i].rjust(max_width)}")
 
 
-def lab2_task7():
-    pass
+def lab2_task7(lst1, lst2):
+    lst2 = list(set(lst2))
+    for elem in lst1:
+        if elem in lst2:
+            lst1.remove(elem)
+    print(lst1)
 
 
 def lab2_task8():
